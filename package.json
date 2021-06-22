@@ -1,0 +1,25 @@
+{
+  "name": "js-app-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "jathpr",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack serve --open"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uglify": "^3.0.2",
+    "html-webpack-plugin": "^5.3.2",
+    "prettier": "^2.3.1",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
