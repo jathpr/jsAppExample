@@ -1,5 +1,7 @@
-const URL = "http://localhost:3033/users";
+import { connectToDom } from "./dom/index";
 
+connectToDom();
+const URL = "http://localhost:3033/users";
 // async function showUsers() {
 //   const users = await getUsers();
 
@@ -60,25 +62,6 @@ const URL = "http://localhost:3033/users";
 //     console.error("Ошибка:", error);
 //   }
 // };
-
-const sendData = async (name) => {
-  try {
-    const response = await fetch(URL, {
-      method: "POST",
-      body: JSON.stringify({ name: name }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    const json = await response.json();
-    return json;
-  } catch (error) {
-    console.error("Ошибка:", error);
-  }
-};
-
-document.getElementById("add").onclick = () =>
-  sendData(document.getElementById("input").value);
 
 const sheet = document.getElementById("sheet");
 
