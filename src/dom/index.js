@@ -1,7 +1,9 @@
 import { httpRequests } from "../requests/http";
+import * as $ from "jQuery";
 
 export const connectToDom = () => {
   const http = httpRequests("http://localhost:3033/users");
-  document.getElementById("add").onclick = () =>
-    http.post(document.getElementById("input").value);
+  $("#add").on("click", () =>
+    http.post(document.getElementById("input").value)
+  );
 };

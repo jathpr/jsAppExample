@@ -4,10 +4,15 @@
   "main": "index.js",
   "author": "jathpr",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "test": "jest"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-jest": "^27.0.6",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
@@ -17,9 +22,14 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-uglify": "^3.0.2",
     "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.0.6",
     "prettier": "^2.3.1",
     "webpack": "^5.40.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21"
   }
 }
